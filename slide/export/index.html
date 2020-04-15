@@ -279,37 +279,50 @@
 
 
     
-    <section>
         <section >
+            
             <h2><a id="user-content-计算机底层揭秘之" class="anchor" href="#计算机底层揭秘之" aria-hidden="true"></a>计算机底层揭秘之</h2>
 <h3><a id="user-content-byte为什么是-128127" class="anchor" href="#byte为什么是-128127" aria-hidden="true"></a>byte为什么是[-128,127]</h3>
 <p><code>zhoujun5@jd.com</code></p>
 
             </section>
-        
-            <section >
-                <h2><a id="user-content-重要假设" class="anchor" href="#重要假设" aria-hidden="true"></a>重要假设</h2>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-重要假设" class="anchor" href="#重要假设" aria-hidden="true"></a>重要假设</h2>
 <blockquote>
-<p>假设一个数用四位来表示</p>
+<p>假设一个数用四位二进制位来表示</p>
 </blockquote>
 <blockquote>
 <p>本文只涉及加减运算</p>
 </blockquote>
 
             </section>
-        
-            <section >
-                <h2><a id="user-content-前言" class="anchor" href="#前言" aria-hidden="true"></a>前言</h2>
-<img src="./images/yinyang.jpg" width="600">
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-前言" class="anchor" href="#前言" aria-hidden="true"></a>前言</h2>
+<img src="./images/yinyang.jpg" width="500">
 <p>世界阴阳并存</p>
 <p>人分善恶，数有正负</p>
 
             </section>
-        
-            <section >
-                <!-- .slide: data-background="#4d7e65"-->
-<h2><a id="user-content-前言-1" class="anchor" href="#前言-1" aria-hidden="true"></a>前言</h2>
-<ul>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
 <li>
 <p>计算机用二进制的规则表示自然数</p>
 </li>
@@ -319,9 +332,14 @@
 </ul>
 
             </section>
-        
-            <section >
-                <h2><a id="user-content-符号位" class="anchor" href="#符号位" aria-hidden="true"></a>符号位</h2>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-符号位" class="anchor" href="#符号位" aria-hidden="true"></a>符号位</h2>
 <p>最高位表示符号位,<strong>0为正数</strong>,<strong>1为负数</strong></p>
 <p>我觉得本质上<span class="fragment highlight-red"><strong>符号位</strong>
 </span>就是为了解决计算机<span class="fragment highlight-red">如何表示<strong>负数</strong></span>而出现的。</p>
@@ -330,9 +348,14 @@
 </blockquote>
 
             </section>
-        
-            <section >
-                <h2><a id="user-content-运算" class="anchor" href="#运算" aria-hidden="true"></a>运算</h2>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-运算" class="anchor" href="#运算" aria-hidden="true"></a>运算</h2>
 <ul>
 <li>根据冯诺依曼计算机体系得知，一台计算机由运算器，控制器，存储器，输入输出设备组成。</li>
 </ul>
@@ -341,9 +364,14 @@
 </blockquote>
 
             </section>
-        
-            <section >
-                <h2><a id="user-content-计算之旅-原码" class="anchor" href="#计算之旅-原码" aria-hidden="true"></a>计算之旅-原码</h2>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-计算之旅-原码" class="anchor" href="#计算之旅-原码" aria-hidden="true"></a>计算之旅-原码</h2>
 <pre><code>4+2=0100+0010=0110=6
 
 4-2=4+(-2)=0100+1010=1110=-6
@@ -363,9 +391,14 @@
 </ul>
 
             </section>
-        
-            <section >
-                <h2><a id="user-content-计算之旅-反码" class="anchor" href="#计算之旅-反码" aria-hidden="true"></a>计算之旅-反码</h2>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-计算之旅-反码" class="anchor" href="#计算之旅-反码" aria-hidden="true"></a>计算之旅-反码</h2>
 <ul>
 <li>
 <p>某一个负数是某一个正数的相反数，我们把这个正数全部按位取反来表示负数，这样相反数相加的结果就等于0了</p>
@@ -376,10 +409,14 @@
 </ul>
 
             </section>
-        
-            <section >
-                <h2><a id="user-content-计算之旅-反码-1" class="anchor" href="#计算之旅-反码-1" aria-hidden="true"></a>计算之旅-反码</h2>
-<ul>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
 <li>2是0010，那么-2就是1101</li>
 </ul>
 <pre><code>4-2=0100+1101=0001(反码)=0001=1
@@ -392,18 +429,26 @@
 </code></pre>
 
             </section>
-        
-            <section >
-                <h2><a id="user-content-计算之旅-反码-2" class="anchor" href="#计算之旅-反码-2" aria-hidden="true"></a>计算之旅-反码</h2>
-<ul>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
 <li>然后发现除了两个相反数相加稍等接近我们所熟知的结果，其他的结果简直不忍直视，所以用反码来表示负数也是不靠谱的。</li>
 </ul>
 
             </section>
-        
-            <section >
-                <h2><a id="user-content-计算之旅-反码-修正" class="anchor" href="#计算之旅-反码-修正" aria-hidden="true"></a>计算之旅-反码-修正</h2>
-<ul>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
 <li>
 <p>如果符号位有进位的情况下，将进位加到结果的最后一位</p>
 </li>
@@ -421,48 +466,79 @@
 </code></pre>
 
             </section>
-        
-            <section >
-                <h2><a id="user-content-计算之旅-补码" class="anchor" href="#计算之旅-补码" aria-hidden="true"></a>计算之旅-补码</h2>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-计算之旅-补码" class="anchor" href="#计算之旅-补码" aria-hidden="true"></a>计算之旅-补码</h2>
 <p>那怎么办呢,怎么来解决负数的表示问题呢？</p>
 <img src="./images/gaoneng.jpg" width="600">
             </section>
-        
-            <section >
-                <h2><a id="user-content-计算之旅-补码-1" class="anchor" href="#计算之旅-补码-1" aria-hidden="true"></a>计算之旅-补码</h2>
-<ul>
-<li>伟大的科学家们观察自然界的运行规律，总结出了两个很牛逼的概念，一个叫&quot;模&quot;，一个叫&quot;补数&quot;</li>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
+<li>伟大的科学家们观察自然界的运行规律，总结出了两个很牛逼的概念，一个叫 <strong>“模”</strong>，一个叫 <strong>&quot;补数&quot;</strong></li>
 </ul>
 
             </section>
-        
-            <section >
-                <h2><a id="user-content-会作秀的煮饭仙人" class="anchor" href="#会作秀的煮饭仙人" aria-hidden="true"></a>“会作秀”的煮饭仙人</h2>
-<div class="container">
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-计算之旅-补码-模" class="anchor" href="#计算之旅-补码-模" aria-hidden="true"></a>计算之旅-补码-模</h2>
+<img src="./images/xiaopengyou.jpeg" width="400">
+<ul>
+<li>啥是模？肉夹馍？羊肉泡馍？</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <blockquote>
+<p>官方术语：“模”是指一个计量系统的计数范围。如时钟、计算机等。</p>
+</blockquote>
+<ul>
+<li>只要有一个计量范围，即都存在一个“模”.“模”实质上是计量器产生“溢出”的量,它的值在计量器上表示不出来,计量器上只能表示出模的余数.</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <div class="container">
   <div class="row">
     <div class="col">
-      <img src="./images/zf1.gif" width="300"/>
+      <img src="./images/shizhong.jpeg" width="400">
     </div>
     <div class="col">
-      <img src="./images/zf2.gif" width="300"/>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <img src="./images/zf3.gif" width="300"/>
-    </div>
-    <div class="col">
-      <img src="./images/zf4.gif" width="300"/>
+      十二小时制的时钟采用的是十二进制，到了12点，就又从1开始了，所以12是时钟系统的模。真正十二进制中只有0到11，<span class="fragment highlight-red">12表示不出来</span>
     </div>
   </div>
 </div>
 <aside class="notes">
-每次煮饭定量三升米，淘米要用流水不停冲洗，让每颗米粒充分摩擦又不可用蛮力以免米粒受到伤害。米要浸泡40分钟，水一定要在前一晚放入装有长炭的大瓦罐中静置</aside>
+就是哈比如说，十二小时制的时钟这个是不是采用的是十二进制，并且呢一到了12点，再向后就又从1开始了，所以12是时钟系统的模。12是一个范围，超过了十二一切从头来过。好多文章都说时钟系统的计量范围是0到11，但是没有解释为什么，我这边猜测是因为时钟采用的是12进制，如果不发生进位的话，那它就只能表示0到11这12个数。</aside>
 
             </section>
-        
-
-    </section>
     
 
 
@@ -470,8 +546,7 @@
     
         <section >
             
-            <h2><a id="user-content-假谦虚的学霸" class="anchor" href="#假谦虚的学霸" aria-hidden="true"></a>“假谦虚”的学霸</h2>
-<p><img src="./images/kent-beck.jpg" alt=""></p>
+            <p>啥是补数呢？</p>
 
             </section>
     
@@ -479,46 +554,13 @@
 
 
     
-        <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+        <section >
             
-            <!-- .slide: data-transition="slide" data-background="#b5533c" data-background-transition="zoom" -->
-<h2><a id="user-content-银河补习班" class="anchor" href="#银河补习班" aria-hidden="true"></a>银河补习班</h2>
-<p>马浩文坐牢是不是怪他的徒弟大头？</p>
-<p><img src="./images/yhbxb.jpg" alt=""></p>
-
-            </section>
-    
-
-
-
-    
-        <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-            
-            <!-- .slide: data-transition="slide" data-background="#b5533c" data-background-transition="zoom" -->
-<h2><a id="user-content-开县井喷" class="anchor" href="#开县井喷" aria-hidden="true"></a>开县井喷</h2>
-<p><img src="./images/kxjp.png" alt=""></p>
-<p><small>重庆市第二中级人民法院以重大责任事故罪判分别处被告人吴斌有期徒刑六年；判处被告人王建东有期徒刑五年；判处被告人宋涛有期徒刑五年；判处被告人吴华有期徒刑四年；判处被告人向一明有期徒刑三年；判处被告人肖先素有期徒刑三年，宣告缓刑四年</small></p>
-
-            </section>
-    
-
-
-
-    
-        <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-            
-            <!-- .slide: data-transition="slide" data-background="#b5533c" data-background-transition="zoom" -->
-<h2><a id="user-content-线上事故" class="anchor" href="#线上事故" aria-hidden="true"></a>线上事故</h2>
+            <blockquote>
+<p>民间解释：当M是系统的模的时候，如果|A|+|B|=M，我们就说A的补数是B</p>
+</blockquote>
 <ul>
-<li>使用 <code>==</code> 而不是 <code>equals</code></li>
-<li>在循环中进行远程调用</li>
-<li>修改代码后未经过单元测试就上线</li>
-<li>本地测试时写死的值提交到代码库并最终上线</li>
-<li>修改代码后未提测就上线</li>
-<li>未按规定时间上线</li>
-<li>一次性上线所有应用实例</li>
-<li>线上环境未配置数据库连接</li>
-<li>架构设计隐患未发现多年后暴雷</li>
+<li>这个概念跟补角的概念类似，如果两个角相加为180°，那么称两个角互补。</li>
 </ul>
 
             </section>
@@ -529,110 +571,8 @@
     
         <section >
             
-            <h2><a id="user-content-所以" class="anchor" href="#所以" aria-hidden="true"></a>所以</h2>
-<p>我们要 <span class="fragment highlight-red"><strong>找到正确的方法</strong></span> <span class="fragment  highlight-blue"><strong>坚持执行</strong></span></p>
-<p><span class="fragment"><strong>然后我们拥有了伟大的习惯</strong></span></p>
-
-            </section>
-    
-
-
-
-    
-    <section>
-        <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-            <!-- .slide: data-transition="slide" data-background="#4d7e65" data-background-transition="zoom" -->
-<h2><a id="user-content-正确的方法" class="anchor" href="#正确的方法" aria-hidden="true"></a>正确的方法</h2>
-<ul>
-<li>组织</li>
-<li>流程</li>
-<li>工具</li>
-</ul>
-<p><img src="./images/arrow-down.png" alt=""></p>
-
-            </section>
-        
-            <section >
-                <!-- .slide: data-background="#4d7e65"-->
-<h2><a id="user-content-组织" class="anchor" href="#组织" aria-hidden="true"></a>组织</h2>
-<ul>
-<li>资深工程师团队</li>
-<li>学习小组</li>
-<li>……</li>
-</ul>
-
-            </section>
-        
-            <section >
-                <!-- .slide: data-background="#4d7e65"-->
-<h2><a id="user-content-流程" class="anchor" href="#流程" aria-hidden="true"></a>流程</h2>
-<ul>
-<li>新员工培训流程</li>
-<li>开发流程</li>
-<li>上线流程</li>
-<li>线上问题处理流程</li>
-<li>……</li>
-</ul>
-
-            </section>
-        
-            <section >
-                <!-- .slide: data-background="#4d7e65"-->
-<h2><a id="user-content-工具" class="anchor" href="#工具" aria-hidden="true"></a>工具</h2>
-<ul>
-<li>代码检查工具</li>
-<li>知识中心 - 规范/案例/模板</li>
-<li>根因分析</li>
-<li>……</li>
-</ul>
-
-            </section>
-        
-            <section >
-                <!-- .slide: data-background="#4d7e65"-->
-<h2><a id="user-content-案例1" class="anchor" href="#案例1" aria-hidden="true"></a>案例1</h2>
-<p>根因分析</p>
-<p><img src="./images/issue.jpg" alt=""></p>
-
-            </section>
-        
-            <section >
-                <!-- .slide: data-background="#4d7e65"-->
-<h2><a id="user-content-案例1-1" class="anchor" href="#案例1-1" aria-hidden="true"></a>案例1</h2>
-<p>改进措施</p>
-<ul>
-<li>制定多线程编码规范，包括使用场景、模式、模板、编写单元测试的方式等，在知识中心维护 @资深工程师团队 12/28</li>
-<li>在新员工培训流程中加入多线程编码规范的宣导  @张三 12/30</li>
-<li>上线前代码如果有多线程相关代码必须找@资深工程师团队成员review，review的check点包括第一条的使用场景是否合理、是否用了要求的模板或模式以及必须要有充分的单元测试 @李四 负责把细化此规则，写到文档中心</li>
-</ul>
-
-            </section>
-        
-
-    </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2><a id="user-content-坚持很难" class="anchor" href="#坚持很难" aria-hidden="true"></a>坚持很难</h2>
-<p><img src="./images/dkxy.jpg" alt=""></p>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2><a id="user-content-熬过漫长的绝望之坡" class="anchor" href="#熬过漫长的绝望之坡" aria-hidden="true"></a>熬过漫长的绝望之坡</h2>
-<ul>
-<li>信念 - ABC</li>
-<li>逻辑 - 无法结果证明的时候，最起码逻辑上没有漏洞</li>
-<li>经验 - 间接经验也是经验</li>
+            <ul>
+<li>以时钟为例，现在是两点，你要把它变成一点你会怎么做？</li>
 </ul>
 
             </section>
@@ -643,25 +583,13 @@
     
         <section >
             
-            <h2><a id="user-content-坚持并不难" class="anchor" href="#坚持并不难" aria-hidden="true"></a>坚持并不难</h2>
-<p>100%地去坚守你的原则，总比98%坚持要<strong>容易</strong>，因为一旦有破例，就很容易为其它情况找理由。假如你越过这道防线一次，在今后可能将会一次又一次地越过这道防线。你必须给你自己的原则做个定义，然后以你的原则为基准，给自己划一个安全的防线。</p>
-<p>– 克里斯坦森，《创新者的窘境》作者</p>
-<aside class="notes">
-老师说，稳定在90分很容易，只要坚持好的学习方法和习惯，但控制在85分很难。</aside>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <h2><a id="user-content-何为能力" class="anchor" href="#何为能力" aria-hidden="true"></a>何为能力</h2>
-<ul>
-<li>解决别人解决不了的问题</li>
-<li>更快更好地解决别人能解决的问题</li>
-<li>创造预期之外的价值</li>
+            <ul>
+<li>
+<p>逆时针旋转时针一格</p>
+</li>
+<li>
+<p>顺时针旋转十一格</p>
+</li>
 </ul>
 
             </section>
@@ -672,13 +600,206 @@
     
         <section >
             
-            <h1><a id="user-content-the-end" class="anchor" href="#the-end" aria-hidden="true"></a>THE END</h1>
+            <blockquote>
+<p>假设顺时针是正，逆时针是负</p>
+</blockquote>
+<blockquote>
+<p>得出：2-1=2+11</p>
+</blockquote>
+<p><span style="color:red">因为 1 和 11是补数</span></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="./images/erjinzhi.jpeg" width="450">
+    </div>
+    <div class="col">
+      <span style="font-size:20px">
+      将时钟迁移到计算机系统：比如一个4位的二进制，最多可以表示2^4=16个数，最大的数是<span style="color:red">1111=15</span>，超过1111就会发生进位的情况，变成<span style="color:red">10000</span>，因为只有四位，所以表示的是<span style="color:red">0000=0</span>，然后再加一，变成<span style="color:red">0001=1</span>，开始了循环，那么<span style="color:red">模的值就是16这个溢出的值。</span>
+      </span> 
+    </div>
+  </div>
+</div>
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>所以如何把减法变成加法？</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>加上他的补数就可以了</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <pre><code>4-2=4+14=0100+1110=0010=2
+
+-4-2=12+14=1100+1110=1010=10=-6(最高位是1所以是最后是负数)
+
+-1-2=15+14=1111+1110=1101=13=-3(最高位是1所以是最后是负数)
+
+2-2=2+14=0010+1110=0000=0
+</code></pre>
 <ul>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal">Vscode Reveal</a></li>
-<li><a href="https://github.com/hakimel/reveal.js/">reveal.js</a></li>
-<li><a href="https://github.com/codeasycc/slideasy">slideasy</a></li>
+<li>
+<p>用14来表示-2的方式称为补码的方式，-2的补码就是<strong>1110</strong>，只不过它刚好等于反码加一而已。</p>
+</li>
+<li>
+<p>最高位表明了正负，并且可以直接参与运算。</p>
+</li>
 </ul>
-<p><img src="./images/codeasy.jpg" alt="codeasy"></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
+<li>这样计算机的设计只需要支持加法计算器，支持补码的编码方式就行，电路会负担比较小。</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
+<li>到此，负数的编码告一段落，还有一个问题就是为什么在符号位1表示负数，0表示正数？</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-byte的取值范围" class="anchor" href="#byte的取值范围" aria-hidden="true"></a>byte的取值范围</h2>
+<p>回到正题，为啥byte的范围是-128到正的127？</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
+<li>
+<p>在java中byte是用一个字节来表示也就是8位的二进制</p>
+</li>
+<li>
+<p>java不支持无符号类型，全是有符号类型的数</p>
+</li>
+</ul>
+<blockquote>
+<p>得出结论：最高位是符号位</p>
+</blockquote>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>正数的最大值是<span style="color:red"><strong>01111111</strong></span>=127</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>负数的范围是<span style="color:red"><strong>11111111</strong></span>
+到<span style="color:red"><strong>10000000</strong></span></p>
+<p>八位二进制的模是<span style="color:red">256</span></p>
+<p>11111111=255=-1</p>
+<p>10000000=128=-128</p>
+<p>所以负数最大到了<span style="color:red">-128</span></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p><span style="color:red">byte的取值范围为[-128,127]</span></p>
+<img src="./images/wanjiesahua.jpeg" width="450">
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <img src="./images/shiqngbujinadan.jpeg" width="450">
+<p>你以为这就完了吗？</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3><a id="user-content-为什么0表示正数1表示负数" class="anchor" href="#为什么0表示正数1表示负数" aria-hidden="true"></a>为什么0表示正数1表示负数</h3>
+<ul>
+<li>
+<span style="font-size:25px">
+  猜测一：最高位是符号位这点是必须的(因为需要表示负数)，所以是剩下的位数来表示数的值，拿4位来说，三位的正数最大是111=7，0到7，然后4位表示的数只能有16个数，所以还剩下8个数，所以负数最小不会小于-8，范围可能是-1到-8，那-1到-8的话，补数就是8到15全是比8大的数，所以最高位肯定是1，所以负数的补码最高位肯定是1，也许这就是负数的符号位是1的原因
+</li>
+</ul>
+</span> 
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2><a id="user-content-end" class="anchor" href="#end" aria-hidden="true"></a>END</h2>
+<p>感谢大家的时间！</p>
 
             </section>
     
